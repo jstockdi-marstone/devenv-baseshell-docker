@@ -1,6 +1,7 @@
 FROM ubuntu:latest
 LABEL maintainer="David Stenglein <dave@davidstenglein.com>"
 
+ENV TZ="America/New_York"
 
 RUN adduser --gecos "*" --disabled-password devuser && \
     apt-get update && \
